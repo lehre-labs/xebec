@@ -8,7 +8,7 @@ metadata:
 
 # Domain Modeling
 
-Actively build and sharpen the project's domain model as you design. This is the *active* discipline -- challenging terms, inventing edge-case scenarios, and writing the glossary and decisions down the moment they crystallise. (Merely *reading* `@CONTEXT.md` for vocabulary is not this skill — that's a one-line habit any skill can do. This skill is for when you're changing the model, not just consuming it.)
+Actively build and sharpen the project's domain model as you design. This is the *active* discipline -- challenging terms, inventing edge-case scenarios, and writing the glossary and decisions down the moment they crystallise. (Merely *reading* `@CONTEXT.md` for vocabulary is not this skill -- that's a one-line habit any skill can do. This skill is for when you're changing the model, not just consuming it.)
 
 ```md
 Human: Let's pin down what we mean by "account" vs "user" in this codebase.
@@ -47,7 +47,7 @@ If a `@CONTEXT-MAP.md` exists at the root, the repo has multiple contexts. The m
 │       └── docs/adr/
 ```
 
-Create files lazily — only when you have something to write. If no `@CONTEXT.md` exists, create one when the first term is resolved. If no `docs/adr/` exists, create it when the first ADR is needed.
+Create files lazily -- only when you have something to write. If no `@CONTEXT.md` exists, create one when the first term is resolved. If no `docs/adr/` exists, create it when the first ADR is needed.
 
 ## During the session
 
