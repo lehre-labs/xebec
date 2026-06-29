@@ -1,6 +1,7 @@
 ---
 name: grill-me
 description: Interview the user relentlessly about a PRD, SPEC or PLAN. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases.
+argument-hint: "[path to a PRD, SPEC, or PLAN]"
 disable-model-invocation: true
 metadata:
   version: "1.0.1"
