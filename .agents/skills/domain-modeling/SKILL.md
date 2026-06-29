@@ -10,6 +10,13 @@ metadata:
 
 Actively build and sharpen the project's domain model as you design. This is the *active* discipline -- challenging terms, inventing edge-case scenarios, and writing the glossary and decisions down the moment they crystallise. (Merely *reading* `@CONTEXT.md` for vocabulary is not this skill — that's a one-line habit any skill can do. This skill is for when you're changing the model, not just consuming it.)
 
+```md
+Human: Let's pin down what we mean by "account" vs "user" in this codebase.
+Human: Help me build a glossary for the ordering context.
+Human: I keep using "cancellation" loosely -- let's nail down the terms.
+Human: Walk the billing domain with me and sharpen the language as we go.
+```
+
 ## File structure
 
 Most repos have a single context:
