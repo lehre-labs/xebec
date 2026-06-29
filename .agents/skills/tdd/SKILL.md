@@ -77,7 +77,7 @@ RED:   Write test for first behavior → test fails
 GREEN: Write minimal code to pass → test passes
 ```
 
-This is your tracer bullet - proves the path works end-to-end.
+This is your tracer bullet -- proves the path works end-to-end.
 
 ### 3. Incremental Loop
 
