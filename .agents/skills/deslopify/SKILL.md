@@ -1,6 +1,6 @@
 ---
 name: deslopify
-description: Remove AI-generated code slop and clean up code style
+description: Remove AI-generated slop from a branch diff -- redundant comments, needless defensive checks, `any` casts, over-nesting -- and match the surrounding code style. Use when the user wants to clean up a diff before a PR or says "deslopify".
 metadata:
   version: "1.0.0"
   authors: ["cursor-team", "lehre-labs"]
