@@ -10,6 +10,13 @@ metadata:
 
 Write an Architecture Decision Record at the moment a decision lands. An ADR records *that* a decision was made and *why* -- nothing more.
 
+```md
+Human: We're going event-sourced for orders instead of CRUD -- let's write an ADR.
+Human: Record why we picked Postgres over DynamoDB for the write model.
+Human: We argued sync HTTP vs domain events and landed on events -- capture that.
+Human: Document the decision to split billing into its own service.
+```
+
 ## When to write one
 
 All three criteria must be true:
