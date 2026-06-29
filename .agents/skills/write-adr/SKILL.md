@@ -28,7 +28,7 @@ Always in `docs/adr/`. Create the directory lazily -- only when the first ADR is
 
 First, scan `docs/adr/` for the highest existing number, increment by one, and create `NNNN-slug.md`.
 
-Then, use the template below to write an ADR: `@ADR.template.md`.
+Then, use the template below to write an ADR: [`@ADR.template.md`](./ADR.template.md).
 
 ## What qualifies
 
