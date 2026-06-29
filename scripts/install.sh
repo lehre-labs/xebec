@@ -26,6 +26,12 @@ ln -sfn ../.xebec/.agents/hooks  "$root/.claude/hooks"
 ln -sfn .xebec/.mcp.json         "$root/.mcp.json"
 echo "linked .agents, .claude/skills, .claude/hooks, .mcp.json -> .xebec"
 
+# Issue/PR templates only -- .github/workflows stays the repo's own.
+mkdir -p "$root/.github"
+ln -sfn ../.xebec/.github/ISSUE_TEMPLATE          "$root/.github/ISSUE_TEMPLATE"
+ln -sfn ../.xebec/.github/PULL_REQUEST_TEMPLATE.md "$root/.github/PULL_REQUEST_TEMPLATE.md"
+echo "linked .github/{ISSUE_TEMPLATE,PULL_REQUEST_TEMPLATE.md} -> .xebec"
+
 # Per-repo and editable -- seed once, never clobber.
 if [[ -e "$root/.claude/settings.json" ]]; then
   echo "kept existing .claude/settings.json"

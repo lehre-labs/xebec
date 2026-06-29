@@ -7,7 +7,8 @@ set -euo pipefail
 
 root=$(git rev-parse --show-toplevel)
 
-for link in .agents .claude/skills .claude/hooks .mcp.json; do
+for link in .agents .claude/skills .claude/hooks .mcp.json \
+  .github/ISSUE_TEMPLATE .github/PULL_REQUEST_TEMPLATE.md; do
   if [[ -L "$root/$link" ]]; then
     rm "$root/$link"
     echo "removed $link"

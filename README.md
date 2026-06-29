@@ -13,7 +13,7 @@ git submodule add <xebec-remote-url> .xebec
 bash .xebec/scripts/install.sh
 ```
 
-`install.sh` symlinks the shared `.agents` tree, the `.claude/{skills,hooks}` Claude Code reads, and `.mcp.json` out of the submodule (so `git submodule update` propagates fixes) and seeds a per-repo `.claude/settings.json` that stays yours to edit. Then, in Claude Code:
+`install.sh` symlinks the shared `.agents` tree, the `.claude/{skills,hooks}` Claude Code reads, `.mcp.json`, and the `.github` issue/PR templates out of the submodule (so `git submodule update` propagates fixes) and seeds a per-repo `.claude/settings.json` that stays yours to edit. Your `.github/workflows` stay your own. Then, in Claude Code:
 
 ```
 /setup-lehre-labs-experiment
