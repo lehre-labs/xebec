@@ -22,12 +22,14 @@ Concrete discipline files at predictable paths, each with a single job:
 
 These are not prompts. They're artifacts. They define the what, never the how. No "think step by step", no "you are a skilled engineer", no role-playing. Just facts and constraints that survive model changes.
 
+The discipline extends past docs. xebec also ships **skills** -- repeatable engineering procedures (TDD, ADRs, domain modeling, conflict resolution) as files, not pep talks -- and the **harness wiring** that points an agent at tools the repo already runs: post-edit lint hooks and MCP server config. You pull xebec into a project as a submodule, wire it in once, and the `setup-lehre-labs-experiment` skill scaffolds the discipline files. Update xebec once and every repo inherits it.
+
 ## Non-Goals
 
 - Not a prompt engineering framework. No templating, no chaining, no "best practices for writing prompts."
 - Not a memory system. Agents remember things; these files define what they should know upfront.
-- Not a scaffolding tool. This doesn't generate project boilerplate -- it defines discipline files for projects that already exist.
-- Not an agent runtime or SDK. No execution, no tool calling, no MCP integration. Just files on disk.
+- Not a project-boilerplate generator. xebec scaffolds discipline files and wires the agent harness -- it never generates application code, frameworks, or business logic.
+- Not an agent runtime or SDK. We don't execute your agent or proxy model calls. The hooks and MCP config are just files that point at tools you already run.
 
 ## Related Work
 
