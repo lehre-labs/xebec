@@ -21,4 +21,4 @@ NOTE: The issue tracker and triage label vocabulary should have been provided to
 
 Check with the user that these seams match their expectations.
 
-3. Write the PRD using the template `@PRD.template.md`, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label -- no need for additional triage.
+3. Write the PRD using the template [`@PRD.template.md`](./PRD.template.md), then publish it to the project issue tracker. Apply the `ready-for-agent` triage label -- no need for additional triage.
