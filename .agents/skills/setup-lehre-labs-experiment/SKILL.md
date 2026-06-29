@@ -1,7 +1,7 @@
 ---
 name: setup-lehre-labs-experiment
 description: Scaffold a new Lehre Labs experiment from the void -- IDEA.md, AGENTS.md, README.md, and the operational context the engineering skills assume. Use when starting a new repo or adding the Lehre Labs discipline files to an existing one.
-argument-hint: "What's the experiment?"
+argument-hint: "[what the experiment is]"
 disable-model-invocation: true
 metadata:
   version: "1.0.0"
