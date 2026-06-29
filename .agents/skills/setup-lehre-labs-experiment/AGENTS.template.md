@@ -112,3 +112,7 @@ In replies to the human:
 **Prompts are technical debt.** Prompts (AGENTS.md, CLAUDE.md, skills, system prompts) are a worse form of technical debt than code. They're model-specific -- a prompt tuned for one model can silently degrade or become harmful after a model upgrade. Unlike buggy code, prompt decay doesn't throw errors; you just get subtly worse results. Avoid behavior steering ("think step by step", "you are a skilled engineer") and keep files limited to concrete, project-specific facts. Write prompts yourself. Delete them whenever you can.
 
 **Principles ≠ Rules.** This file defines principles -- behavioral guidelines and judgment calls. Rules are at `.agents/rules/` -- enforceable, automated, or explicitly checkable constraints. Principles guide how to think; rules define what must or must not happen.
+
+<critical>
+Alongside this `AGENTS.md`, keep a sibling `CLAUDE.md` whose entire content is the single line `@AGENTS.md`. `AGENTS.md` is canonical; `CLAUDE.md` only includes it, so a harness keyed on either name loads the same contract. Edit `AGENTS.md` only -- never let the two drift.
+</critical>

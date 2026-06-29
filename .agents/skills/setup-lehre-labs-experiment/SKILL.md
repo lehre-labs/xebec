@@ -66,9 +66,10 @@ Write in order, each from its template in this folder. Read the template before 
 
 1. **IDEA.md** -- the bet, the problem, the approach, the non-goals, the related work.
 2. **AGENTS.md** -- copy `AGENTS.template.md`, set the project name and canonical project file. Principles 1-7 are canonical; never alter them. Project-specific notes go *below* principle 7, not inside it.
-3. **README.md** -- thesis pulled verbatim from IDEA.md.
+3. **CLAUDE.md** -- a one-line clone whose entire content is `@AGENTS.md`. `AGENTS.md` is canonical; this just includes it so a harness keyed on either name loads the same contract.
+4. **README.md** -- thesis pulled verbatim from IDEA.md.
 
-Create a module `AGENTS.md` (from `AGENTS.mini.template.md`) only lazily -- when a module actually grows its own conventions or gotchas. Never pre-create it. The file must be named `AGENTS.md` for the harness to load it; "mini" lives only in the template name, marking it as the module-level supplement to the root contract.
+Create a module `AGENTS.md` (from `AGENTS.mini.template.md`) only lazily -- when a module actually grows its own conventions or gotchas. Never pre-create it. The file must be named `AGENTS.md` for the harness to load it; "mini" lives only in the template name, marking it as the module-level supplement to the root contract. Give it the same one-line `CLAUDE.md` sibling (`@AGENTS.md`).
 
 ### 4. Wire the operational context
 
