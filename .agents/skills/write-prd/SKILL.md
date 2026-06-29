@@ -13,6 +13,15 @@ This skill takes the current conversation context and codebase understanding and
 
 NOTE: The issue tracker and triage label vocabulary should have been provided to you -- if not, run `/setup-pre-triage`.
 
+## Use Cases
+
+```md
+Human: Okay, turn everything we just discussed into a PRD.
+Human: We've scoped the bulk-export feature enough -- draft the PRD and file it.
+Human: Write this up as a ticket an agent can pick up.
+Human: Make a PRD for the changes we agreed on and put it in the tracker.
+```
+
 ## Process
 
 1. Explore the repo to understand the current state of the codebase, if you haven't already. Use the project's domain glossary vocabulary throughout the PRD, and respect any ADRs in the area you're touching.
