@@ -8,8 +8,8 @@ status: proposed | accepted | deprecated | superseded by ADR-NNNN
 
 ## Considered Options (optional)
 
-{agent-write: only when the rejected alternatives are worth remembering.}
+{agent-write: Only when the rejected alternatives are worth remembering.}
 
 ## Consequences (optional)
 
-{agent-write: only when non-obvious downstream effects need calling out.}
+{agent-write: Only when non-obvious downstream effects need calling out.}
