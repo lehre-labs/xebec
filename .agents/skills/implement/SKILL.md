@@ -14,13 +14,15 @@ Implement the work described by the user in the PRD, spec, issues or plans.
 
 Aware of `.agents/rules/*.md`, `docs/adr/*.md`, `@AGENTS.md` and `@CONTEXT.md`.
 
+Before coding, offer `/leave-no-case-behind` to enumerate the case space and feed the resulting test cases into `/tdd`.
+
 Use `/tdd` where possible, at pre-agreed seams.
 
 Run typechecking, formatting, single test files regularly, and the full test suite once at the end.
 
 Once done, use `/deslopify` and `/simplify` in the same session.
 
-We likely need `/handoff` or `/compact` (builtin) to have context headroom for `/code-review`, ask the user explicitly for context.
+We likely need `/handoff` or `/compact` (builtin) to have context headroom for `/code-review`, ask the user explicitly for context. Alongside `/code-review`, offer `/leave-no-case-behind` as a coverage check -- the case map becomes the checklist the review verifies tests against.
 
 Only commit your work to the current branch when user has reviewed the work and approved it.
 

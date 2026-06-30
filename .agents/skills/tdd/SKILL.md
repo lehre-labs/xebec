@@ -66,7 +66,7 @@ Before writing any code:
 
 Ask: "What should the public interface look like? Which behaviors are most important to test?"
 
-**You can't test everything.** Confirm with the user exactly which behaviors matter most. Focus testing effort on critical paths and complex logic, not every possible edge case.
+**You can't test everything.** If a `/leave-no-case-behind` case map exists, prioritize the behaviors to test from it; otherwise offer to run it first to enumerate the space. Confirm with the user exactly which behaviors matter most. Focus testing effort on critical paths and complex logic, not every possible edge case.
 
 ### 2. Tracer Bullet
 
