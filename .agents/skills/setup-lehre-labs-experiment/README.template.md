@@ -10,7 +10,11 @@
 
 ## Known Limitations
 
-{agent-write: What's broken or intentionally unimplemented -- so contributors don't file issues on the rough edges.}
+<critical>
+- Agent tooling lives in a git submodule at `.xebec`. Clone with `git clone --recurse-submodules` (or `git submodule update --init`) -- it's agent-tooling only, not needed to build or test. A plain clone leaves `.xebec` empty and the `.claude` skill/hook symlinks dangling.
+</critical>
+
+{agent-write: Anything else broken or intentionally unimplemented -- so contributors don't file issues on the rough edges.}
 
 <critical>
 - README.md is for humans only -- no agent instructions, no design rationale (those live in AGENTS.md and IDEA.md).
