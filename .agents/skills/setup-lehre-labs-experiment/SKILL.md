@@ -33,6 +33,7 @@ The discipline files, in order. IDEA.md is always first; everything else referen
 | `IDEA.template.md` | `IDEA.md` (root) | Everyone | First. The one bet. Never skip. |
 | `AGENTS.template.md` | `AGENTS.md` (root) | Agents | Second. The 7-principle contract. |
 | `README.template.md` | `README.md` (root) | Humans | After IDEA. Open-source surface. |
+| `RTK.md` | `RTK.md` (root) | Agents | Verbatim fallback; `AGENTS.md` imports it. `rtk init -g` regenerates it version-correct. |
 | `AGENTS.mini.template.md` | `AGENTS.md` (module dir) | Agents | Lazily, per module with its own conventions or gotchas. |
 
 Operational context the engineering skills consume (carried in this folder, copied into `docs/agents/` on setup):
@@ -66,8 +67,9 @@ Write in order, each from its template in this folder. Read the template before 
 
 1. **IDEA.md** -- the bet, the problem, the approach, the non-goals, the related work.
 2. **AGENTS.md** -- copy `AGENTS.template.md`, set the project name and canonical project file. Principles 1-7 are canonical; never alter them. Project-specific notes go *below* principle 7, not inside it.
-3. **CLAUDE.md** -- a one-line clone whose entire content is `@AGENTS.md`. `AGENTS.md` is canonical; this just includes it so a harness keyed on either name loads the same contract.
-4. **README.md** -- thesis pulled verbatim from IDEA.md.
+3. **RTK.md** -- copy verbatim from this folder to the repo root. `AGENTS.template.md` already imports it (`@RTK.md`) in a top `<critical>` block, so the token-killer reference is canonical. Then run `rtk init -g` to wire the hook and a version-correct RTK.md; the carried copy is the fallback when the `rtk` binary isn't installed. Per-project filter overrides go in `.rtk/filters.toml` -- only if the repo actually needs them.
+4. **CLAUDE.md** -- a one-line clone whose entire content is `@AGENTS.md`. The contract (and the RTK import it now carries) lives in `AGENTS.md`; this just includes it so a harness keyed on either name loads the same thing.
+5. **README.md** -- thesis pulled verbatim from IDEA.md.
 
 Create a module `AGENTS.md` (from `AGENTS.mini.template.md`) only lazily -- when a module actually grows its own conventions or gotchas. Never pre-create it. The file must be named `AGENTS.md` for the harness to load it; "mini" lives only in the template name, marking it as the module-level supplement to the root contract. Give it the same one-line `CLAUDE.md` sibling (`@AGENTS.md`).
 

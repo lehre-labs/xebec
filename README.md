@@ -23,6 +23,12 @@ to draw out the idea and scaffold `IDEA.md`, `AGENTS.md`, and `README.md`.
 
 Pull the latest discipline into an existing repo with `git submodule update --remote .xebec`. To unwire, `bash .xebec/scripts/uninstall.sh` removes the symlinks and leaves your settings and the submodule intact.
 
+### Tell your contributors
+
+Because the wiring lives in the submodule, a plain clone leaves `.xebec` empty and the `.claude` skill/hook symlinks dangling. Add a line to your repo's own README so contributors clone right (the `/setup-lehre-labs-experiment` skill already seeds it into scaffolded READMEs):
+
+> Clone with `git clone --recurse-submodules` (or run `git submodule update --init`). `.xebec` is agent tooling -- not needed to build or test.
+
 ## Known Limitations
 
 - Submodules need `git clone --recurse-submodules` (or `git submodule update --init`) -- a plain clone gets an empty `.xebec`.

@@ -1,6 +1,11 @@
 # AGENTS.md
 
 <critical>
+This repo routes shell commands through RTK, the token-killer proxy.
+@RTK.md
+</critical>
+
+<critical>
 If `@AGENTS.local.md` or `@CLAUDE.local.md` exists, read it for local preferences.
 </critical>
 
@@ -106,6 +111,10 @@ In replies to the human:
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
+
+## Project Notes
+
+{agent-write: Pointers an agent should know before working here -- the golden/reference files, key entries under `docs/`, plus any caveats, gotchas, or short architecture notes. Keep it concrete and current; delete what goes stale.}
 
 ## Footnotes
 
