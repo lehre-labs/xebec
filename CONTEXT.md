@@ -45,7 +45,7 @@ This file: the glossary of a context's ubiquitous language, and nothing else -- 
 _Avoid_: docs, spec, README, notes
 
 **Principle vs Rule**:
-A Principle is a judgment call in `AGENTS.md` (how to think). A Rule is an enforceable, checkable constraint in `.agents/rules/` (what must or must not happen). Don't call one the other.
+A Principle is a judgment call in `AGENTS.md` (how to think). A Rule is a verifiable predicate over the code in `.agents/rules/` -- a must/must-not an agent can audit by pointing at a line. Checked either by a linter or by the agent re-reading its own diff; every Rule states that check under an `## Audit Instruction`. Don't call one the other.
 _Avoid_: guideline, convention (when the distinction matters)
 
 **ADR**:
