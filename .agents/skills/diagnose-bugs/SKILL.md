@@ -1,6 +1,7 @@
 ---
 name: diagnose-bugs
 description: Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow.
+argument-hint: "[what's broken]"
 metadata:
   version: "2.1.0"
   authors: ["matt-pocock", "obra", "lehre-labs"]

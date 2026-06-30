@@ -1,7 +1,7 @@
 ---
 name: ship-pr
-argument-hint: "[--issue N] [--draft] [--auto-merge] [--title <text>]"
 description: Ship the current branch as a GitHub PR -- commit staged work, push, open a PR from the repo template, report CI, optionally arm auto-merge. Use when the user says "ship it", "open a PR", "create a PR", or "push and PR".
+argument-hint: "[--issue <N>] [--draft] [--auto-merge] [--title <text>]"
 disable-model-invocation: true
 metadata:
   version: "1.0.0"

@@ -1,6 +1,7 @@
 ---
 name: domain-modeling
 description: Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model.
+argument-hint: "[term or area to model]"
 metadata:
   version: "1.0.1"
   authors: ["matt-pocock", "lehre-labs"]
