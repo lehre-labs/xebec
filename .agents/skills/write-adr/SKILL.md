@@ -1,6 +1,7 @@
 ---
 name: write-adr
 description: Write an Architecture Decision Record. Use when the user wants to record a decision, says "let's write an ADR", or a decision lands that meets the three criteria.
+argument-hint: "[what was decided]"
 metadata:
   version: "0.1.0"
   authors: ["lehre-labs"]

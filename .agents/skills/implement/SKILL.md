@@ -1,7 +1,7 @@
 ---
 name: implement
 description: "Implement a piece of work based on a PRD, spec, issues or plans."
-argument-hint: "[PRD, issue #, or plan to implement]"
+argument-hint: "[PRD # | issue # | plan path]"
 disable-model-invocation: true
 metadata:
   version: "1.0.1"

@@ -1,7 +1,7 @@
 ---
 name: manage-github
-argument-hint: "[list|view|create|export ...]"
 description: View, filter, search, create, and export GitHub issues with the gh CLI. Creates issues unassigned unless you name an assignee, and only ever uses labels that already exist. Use to triage, list, count, search, or file issues.
+argument-hint: "[what to do with issues]"
 metadata:
   version: "1.0.0"
   authors: ["lehre-labs"]
