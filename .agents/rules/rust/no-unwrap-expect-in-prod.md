@@ -14,4 +14,4 @@ globs: "**/*.rs"
 cargo clippy --all-targets -- -D clippy::unwrap_used -D clippy::expect_used
 ```
 
-Reference: [`clippy::unwrap_used`, `clippy::expect_used`](https://github.com/rust-lang/rust-clippy) lint index.
+Reference: [`clippy::unwrap_used`, `clippy::expect_used`](https://github.com/rust-lang/rust-clippy) lint index. Also David Drysdale, [Effective Rust, Item 18 -- Don't panic](https://effective-rust.com/panic.html): prefer returning `Result` to `panic!`/`.unwrap()`/`.expect()`, with the one carve-out that it's fine "if you have control of `main`."

@@ -11,3 +11,5 @@ globs: "**/*.rs"
 ## Audit Instruction
 
 Re-read every `.clone()`, `Arc<Mutex<T>>`, and `Rc<RefCell<T>>` your change added. For each, state why it exists. If the only reason is "the borrow checker complained otherwise," resolve the ownership instead.
+
+Reference: [Rust Design Patterns -- Clone to satisfy the borrow checker](https://rust-unofficial.github.io/patterns/anti_patterns/borrow_clone.html): "If a clone is used to make a borrow checker error disappear, that's a good indication this anti-pattern may be in use."

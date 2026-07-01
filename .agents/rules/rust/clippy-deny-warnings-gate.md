@@ -13,3 +13,5 @@ globs: "**/*.rs"
 ```sh
 cargo clippy --all-targets -- -D warnings
 ```
+
+Reference: David Drysdale, [Effective Rust, Item 29 -- Listen to Clippy](https://effective-rust.com/clippy.html): "you should make your code Clippy-warning free... Clippy should also be enabled in your CI system."
