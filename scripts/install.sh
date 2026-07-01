@@ -37,6 +37,7 @@ for lang_dir in "$xebec/.agents/rules"/*/; do
     rust)       [[ -f "$root/Cargo.toml" ]] || continue ;;
     python)     [[ -f "$root/pyproject.toml" ]] || continue ;;
     typescript) [[ -f "$root/package.json" || -f "$root/tsconfig.json" ]] || continue ;;
+    git)        ;; # language-agnostic, always applies
     *)          continue ;;
   esac
   for rule in "$lang_dir"*.md; do
