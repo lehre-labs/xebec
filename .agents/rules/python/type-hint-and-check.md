@@ -14,4 +14,4 @@ globs: "**/*.py"
 uv run ty check
 ```
 
-Reference: [PEP 484 -- Type Hints](https://peps.python.org/pep-0484/).
+Reference: [PEP 484 -- Type Hints](https://peps.python.org/pep-0484/). Also Tim Peters, [PEP 20](https://peps.python.org/pep-0020/): "Explicit is better than implicit."

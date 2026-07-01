@@ -15,3 +15,5 @@ cargo test
 ```
 
 Confirm the new behavior has a test that would fail if the logic were wrong -- not just that the code builds.
+
+Reference: David Drysdale, [Effective Rust, Item 30 -- Write more than unit tests](https://effective-rust.com/testing.html): "if code isn't tested, it probably doesn't work the way you think it does."

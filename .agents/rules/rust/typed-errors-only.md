@@ -12,4 +12,4 @@ globs: "**/*.rs"
 
 Re-read the diff for `panic!`, `Err(format!(...))`, and `Box<dyn Error>` used as the primary error type. Replace panicking control flow with `Result`, and stringly-typed errors with a typed enum.
 
-Reference: [Rust API Guidelines -- error types](https://rust-lang.github.io/api-guidelines/interoperability.html).
+Reference: [Rust API Guidelines -- error types](https://rust-lang.github.io/api-guidelines/interoperability.html). Also David Tolnay (author, thiserror/anyhow), [anyhow README](https://crates.io/crates/anyhow): "Use Anyhow if you don't care what error type your functions return... Use thiserror if you are a library that wants to design your own dedicated error type(s)." And matklad, [Study of std::io::Error](https://matklad.github.io/2020/10/15/study-of-std-io-error.html), on the encapsulate-vs-expose tension behind that split.

@@ -15,3 +15,5 @@ uv run ruff check && uv run ruff format --check
 ```
 
 Then re-read the diff against a neighboring module and confirm async and error handling match the existing style.
+
+Reference: Tim Peters, [PEP 20 -- The Zen of Python](https://peps.python.org/pep-0020/): "There should be one -- and preferably only one -- obvious way to do it."

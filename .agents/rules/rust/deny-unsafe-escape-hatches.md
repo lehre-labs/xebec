@@ -16,4 +16,4 @@ cargo clippy --all-targets -- -D unsafe_code -D warnings
 
 Then grep the diff for `transmute`, `Box::leak`, and `'static` forging; for each survivor confirm a `// SAFETY:` note and that a human approved it.
 
-Reference: [`clippy::unsafe_*` and `unsafe_code`](https://github.com/rust-lang/rust-clippy) lint index.
+Reference: [`clippy::unsafe_*` and `unsafe_code`](https://github.com/rust-lang/rust-clippy) lint index. Also David Drysdale, [Effective Rust, Item 16 -- Avoid writing unsafe code](https://effective-rust.com/unsafe.html): hunt the standard library and crates.io for existing encapsulated `unsafe` before writing your own, and wrap what remains behind a documented, minimal-blast-radius layer.

@@ -12,4 +12,4 @@ globs: "**/*.py"
 
 Re-read each docstring in the diff: delete any that merely restate the function name or signature, and add the *why* (intent, edge cases, gotchas) wherever it's missing.
 
-Reference: [PEP 257 -- Docstring Conventions](https://peps.python.org/pep-0257/).
+Reference: [PEP 257 -- Docstring Conventions](https://peps.python.org/pep-0257/). Also Hynek Schlawack, [Document your tests](https://hynek.me/articles/document-your-tests/): explanation earns its keep exactly where the why isn't obvious.

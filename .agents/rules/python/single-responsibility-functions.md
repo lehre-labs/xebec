@@ -15,3 +15,5 @@ uv run ruff check --select C901,PLR0915
 ```
 
 Then re-read any function the diff grew past one screen and confirm it does one thing.
+
+Reference: Tim Peters, [PEP 20 -- The Zen of Python](https://peps.python.org/pep-0020/): "Simple is better than complex; complex is better than complicated."

@@ -17,4 +17,4 @@ uv run ruff check --select PERF,C4
 
 Then re-read each loop in the diff for list-membership lookups, `+=` string building, and needless materialization -- fix the algorithmic cost, not just whatever the linter flagged.
 
-Reference: [Ruff Perflint (PERF) and flake8-comprehensions (C4) rules](https://docs.astral.sh/ruff/rules/#perflint-perf).
+Reference: [Ruff Perflint (PERF) and flake8-comprehensions (C4) rules](https://docs.astral.sh/ruff/rules/#perflint-perf). The join-not-`+=` and O(n**2)-avoidance rules are Raymond Hettinger's, from [Transforming Code into Beautiful, Idiomatic Python](https://us.pycon.org/2013/schedule/presentation/126/) (PyCon 2013): "don't cause data to move around unnecessarily."

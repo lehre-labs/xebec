@@ -15,3 +15,5 @@ For each external-crate method introduced in the diff, open `https://docs.rs/<cr
 ```sh
 cargo build && cargo test
 ```
+
+Reference: Predrag Gruevski (author, `cargo-semver-checks`), [SemVer in Rust: Tooling, Breakage, and Edge Cases](https://predr.ag/blog/semver-in-rust-tooling-breakage-and-edge-cases/): "careful coding is not enough to avoid SemVer violations... more than 1 in 6 of our most popular crates have shipped a SemVer violation."

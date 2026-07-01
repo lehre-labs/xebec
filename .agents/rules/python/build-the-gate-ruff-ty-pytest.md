@@ -13,3 +13,5 @@ globs: "**/*.py"
 ```sh
 uv run ruff check && uv run ty check && uv run pytest
 ```
+
+Reference: Hynek Schlawack's CI-discipline essays -- [why I like Nox](https://hynek.me/articles/why-i-like-nox/), [turbo-charge tox](https://hynek.me/articles/turbo-charge-tox/).
